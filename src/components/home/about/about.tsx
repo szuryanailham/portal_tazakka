@@ -6,13 +6,22 @@ import PeopleIcon from "@mui/icons-material/People";
 import BannerProgram from "./bannerprogram";
 import VisiProgram from "./visiProgram";
 import PortalProgram from "./PortalProgram";
+
 const About = () => {
   return (
     <Container>
-      <Box my={4} display="flex" flexDirection="column" alignItems="center" justifyContent="center" textAlign="center">
+      <Box
+        my={4}
+        display="flex"
+        flexDirection="column"
+        alignItems="center"
+        justifyContent="center"
+        textAlign="center"
+        className="bg-white" // Tambahkan bg-white di sini
+      >
         <Box>
           <Box>
-            <div className="container mx-auto px-4 py-6">
+            <div className="container mx-auto px-4 py-6 bg-white">
               {/* Title Section */}
               <div className="text-center">
                 <h1 className="text-base font-semibold text-gray-700">About Us</h1>
@@ -30,15 +39,15 @@ const About = () => {
             </div>
           </Box>
           {/* About program */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 p-4">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 p-4 bg-white">
             <ProgramCards icon={PeopleIcon} title="Leadership Program" hoverColor="#77B254" />
             <ProgramCards icon={PeopleIcon} title="Islamic Education" hoverColor="#77B254" />
-            <ProgramCards icon={PeopleIcon} title="International Learning" hoverColor="#77B254" />
-            <ProgramCards icon={PeopleIcon} title="Softskill Improvment" hoverColor="#77B254" />
+            <ProgramCards icon={PeopleIcon} title="International Learning" hoverColor="#A9C46C" />
+            <ProgramCards icon={PeopleIcon} title="Softskill Improvment" hoverColor="#A9C46C" />
           </div>
         </Box>
       </Box>
-      <Box>
+      <Box className="bg-white">
         <BannerProgram />
         <VisiProgram />
         <PortalProgram />
