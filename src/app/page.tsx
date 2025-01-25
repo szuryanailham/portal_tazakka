@@ -12,7 +12,7 @@ export default function Home() {
   const { scrollYProgress } = useScroll(); // Hook to track scroll position
 
   return (
-    <>
+    <div className="bg-white">
       {/* Scroll Indicator */}
       <motion.div
         id="scroll-indicator"
@@ -28,7 +28,6 @@ export default function Home() {
           zIndex: 9999, // Ensure the progress bar is above everything
         }}
       />
-
       <CarouselBanner />
       <About />
       <div>
@@ -50,6 +49,6 @@ export default function Home() {
       </div>
       <ActionContain />
       <ContainerBlogs />
-    </>
+    </div>
   );
 }
